@@ -60,3 +60,5 @@ We’re the customer layer for the internet, powering the most engaging interact
 ## Author
 Anjar Tiyo Saputro
 anjar.jog@gmail.com
+
+[LinkedIn](https://www.linkedin.com/in/anjartiyo/)
