@@ -7,6 +7,5 @@ Feature: Login with OTP
   Scenario: Verify OTP Login functionality
     Given User already on Login Page
     When User enter registered phone number
-#    And OTP sent
     And User input OTP
-#    Then User logged in
+    Then User logged in
