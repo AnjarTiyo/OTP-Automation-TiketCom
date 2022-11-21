@@ -33,14 +33,16 @@ public class LoginWithOTPStepDef extends UserActions {
     }
 
     @And("User input OTP")
-    public void userInputOTP() throws InterruptedException, IOException {
+    public void userInputOTP() throws InterruptedException {
         Thread.sleep(5000); //handle sms sent delay, for further improvement create wait smsBody not equals null
         inputTextTo(getOTPNumber(), OTP_FIELD);
     }
 
     @Then("User logged in")
     public void userLoggedIn() throws InterruptedException {
-        Thread.sleep(1000);
+        userWaitingURLIs(HOME_PAGE_URL);
         Assertions.assertEquals(HOME_PAGE_URL, driver.getCurrentUrl());
+        Thread.sleep(5000); //to show that user is logged in, you can delete it
+        //TODO you can add assertions whether correct user logged in her by inspecting if correct name displayed and or other method
     }
 }
