@@ -1,3 +1,4 @@
+@tiket
 Feature: Login with OTP
 
   As an Registered User,

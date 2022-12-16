@@ -1,0 +1,8 @@
+version: "3"
+services:
+  firefox:
+    image: selenium/standalone-firefox:latest
+    shm_size: 2gb
+    ports:
+      - "4444:4444"
+      - "7900:7900"
